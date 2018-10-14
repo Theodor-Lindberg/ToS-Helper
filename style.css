@@ -1,0 +1,45 @@
+.buttonEffect{
+	margin-bottom: 10;
+	margin-top: 10px;
+	font-size:20px;
+	font-weight:bold;
+	padding:12px 12px;
+	display:inline-block;
+	background-color:#1874CD;
+	border:1px solid;
+	border-radius:5px;
+	-webkit-border-radius:5px;
+	color:#FFFFFF;
+	transition:all 0.2s ease-in-out;
+	-webkit-transition:all 0.2s ease-in-out;
+	-moz-transition:all 0.2s ease-in-out;
+}
+
+.buttonEffect:hover{
+	background-color:#FFFFFF;
+	color:#1874CD;
+	border-color:#1874CD;
+}
+
+.nowrap {
+  white-space:nowrap;
+  color:#808080;
+  float: left;
+  font-size: 14px;
+  margin-left: 10px;
+}
+
+input[type=text], select {
+    width: 50%;
+    padding: 6px 10px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    outline:none;
+}
+
+input[type=text]:focus {
+	box-shadow: 0 0 0 1pt #1874CD;
+}
