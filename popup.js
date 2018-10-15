@@ -1,13 +1,35 @@
 window.onload = () => {
 
-var username;
+var username, role;
 var btnRanked = document.getElementById('btnRanked');
+var btnClassic = document.getElementById('btnClassic');
 var tbxName = document.getElementById('fname');
+var lbxChooseRole = document.getElementById('lbxChooseRole');
 
-function showRanked() {
+function getUserInfo() {
 	username = tbxName.value;
-	alert(username);
+	role = lbxChooseRole.options[lbxChooseRole.selectedIndex].value;
 }
 
+function showRanked() {
+	getUserInfo();
+	
+	if (role == 'Role')
+		return;
+	
+	alert(role);
+}
+
+function showClassic() {
+	getUserInfo();
+	
+	if (role == 'Role')
+		return;
+	
+	alert(role);
+}
+
+// Add first page events
 btnRanked.onclick = showRanked;	
+btnClassic.onclick = showClassic;	
 };
