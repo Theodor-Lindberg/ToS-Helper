@@ -5,6 +5,7 @@ var btnRanked = document.getElementById('btnRanked');
 var btnClassic = document.getElementById('btnClassic');
 var tbxName = document.getElementById('fname');
 var lbxChooseRole = document.getElementById('lbxChooseRole');
+var firstPage = document.getElementById('First Page');
 
 function getUserInfo() {
 	username = tbxName.value;

@@ -5,58 +5,64 @@
 	<script src="popup.js"></script>
   </head>
   <body>
-	<form class="input" autocomplete="off">
-		<span class="nowrap">Enter your name and role choose game mode</span>
-		<input type="text" id="fname" name="firstname" placeholder="Your name..">
-		<select id="lbxChooseRole">
-			<option selected disabled>Role</option>
-			<optgroup label="Town Investigate">
-				<option value="Investigator">Investigator</option>
-				<option value="Lookout">Lookout</option>
-				<option value="Sheriff">Sheriff</option>
-				<option value="Spy">Spy</option>
-			</optgroup>
-			<optgroup label="Town Killing">
-				<option value="Jailor">Jailor</option>
-				<option value="Veteran">Veteran</option>
-				<option value="Vigilante">Vigilante</option>
-			</optgroup>
-			<optgroup label="Town Protective">
-				<option value="Bodyguard">Bodyguard</option>
-				<option value="Doctor">Doctor</option>
-			</optgroup>
-			<optgroup label="Town Support">
-				<option value="Escort">Escort</option>
-				<option value="Mayor">Mayor</option>
-				<option value="Medium">Medium</option>
-				<option value="Retributionist">Retributionist</option>
-				<option value="Transporter">Transporter</option>
-			</optgroup>
-			<optgroup label="Mafia">
-				<option value="Disguiser">Disguiser</option>
-				<option value="Forger">Forger</option>
-				<option value="Framer">Framer</option>
-				<option value="Janitor">Janitor</option>
-				<option value="Godfather">Godfather</option>
-				<option value="Mafioso">Mafioso</option>
-				<option value="Blackmailer">Blackmailer</option>
-				<option value="Consigliere">Consigliere</option>
-				<option value="Consort">Consort</option>
-			</optgroup>
-			<optgroup label="Neutral Evil">
-				<option value="Executioner">Executioner</option>
-				<option value="Jester">Jester</option>
-				<option value="Witch">Witch</option>
-			</optgroup>
-			<optgroup label="Neutral Killing">
-				<option value="Arsonist">Arsonist</option>
-				<option value="Serial Killer">Serial Killer</option>
-				<option value="Werewolf">Werewolf</option>
-			</optgroup>
-		</select>
-		<div id="buttons">
-			<button class="buttonEffect" type="button" id="btnRanked">Ranked</button>
-			<button class="buttonEffect" type="button" id="btnClassic">Classic</button>
+	<form autocomplete="off">
+		<div id="First Page">
+			<span class="nowrap">Enter your name and role choose game mode</span>
+			<input type="text" class="bigTextBox" id="fname" name="firstname" placeholder="Your name..">
+			<!--<input type="text" class="smallTextBox" id="cname" name="dirstname" placeholder="Your role..">-->
+			<select class="bigDropList" id="lbxChooseRole">
+				<option selected disabled>Role</option>
+				<optgroup label="Town Investigate">
+					<option value="Investigator">Investigator</option>
+					<option value="Lookout">Lookout</option>
+					<option value="Sheriff">Sheriff</option>
+					<option value="Spy">Spy</option>
+				</optgroup>
+				<optgroup label="Town Killing">
+					<option value="Jailor">Jailor</option>
+					<option value="Veteran">Veteran</option>
+					<option value="Vigilante">Vigilante</option>
+				</optgroup>
+				<optgroup label="Town Protective">
+					<option value="Bodyguard">Bodyguard</option>
+					<option value="Doctor">Doctor</option>
+				</optgroup>
+				<optgroup label="Town Support">
+					<option value="Escort">Escort</option>
+					<option value="Mayor">Mayor</option>
+					<option value="Medium">Medium</option>
+					<option value="Retributionist">Retributionist</option>
+					<option value="Transporter">Transporter</option>
+				</optgroup>
+				<optgroup label="Mafia">
+					<option value="Disguiser">Disguiser</option>
+					<option value="Forger">Forger</option>
+					<option value="Framer">Framer</option>
+					<option value="Janitor">Janitor</option>
+					<option value="Godfather">Godfather</option>
+					<option value="Mafioso">Mafioso</option>
+					<option value="Blackmailer">Blackmailer</option>
+					<option value="Consigliere">Consigliere</option>
+					<option value="Consort">Consort</option>
+				</optgroup>
+				<optgroup label="Neutral Evil">
+					<option value="Executioner">Executioner</option>
+					<option value="Jester">Jester</option>
+					<option value="Witch">Witch</option>
+				</optgroup>
+				<optgroup label="Neutral Killing">
+					<option value="Arsonist">Arsonist</option>
+					<option value="Serial Killer">Serial Killer</option>
+					<option value="Werewolf">Werewolf</option>
+				</optgroup>
+			</select>
+			<div id="buttons">
+				<button class="buttonEffect" type="button" id="btnRanked">Ranked</button>
+				<button class="buttonEffect" type="button" id="btnClassic">Classic</button>
+			</div>
+		</div>
+		<div id="Second Page">
+			
 		</div>
 	</form>
   </body>
