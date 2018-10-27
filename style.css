@@ -29,6 +29,7 @@
 }
 
 .bigTextBox, .bigDropList {
+	margin: 8px 0;
 	width: 50%;
     padding: 6px 10px;
 	display: inline-block;
@@ -41,11 +42,11 @@
     padding: 2px 5px;
 	display: inline-block;
 	border-radius: 2px;
-	font-size: 12px;
+	font-size: 10px;
+    margin: 0 15px 0 15px;
 }
 
 input[type=text], select {
-    margin: 8px 0;
     border: 1px solid #ccc;
     box-sizing: border-box;
     outline:none;
@@ -55,7 +56,24 @@ input[type=text]:focus, select:focus {
 	box-shadow: 0 0 0 1pt #1874CD;
 }
 
+span {
+	margin: 0;
+	font-size: 12px;
+}
+
 hr {
 	float: left;
-	width: 50%;
+	width: 75%;
+    margin-top: 5px; 
+	margin-bottom: 3px;
+}
+
+.row {
+  display: block;
+}
+
+.row > div {
+  width: 300px;
+  height: 20px;
+  display: inline-block;
 }
